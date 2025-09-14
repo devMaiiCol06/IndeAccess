@@ -1,3 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/ulagadi-sans');
+
+:root {
+    --bgPrimary: #c6c3d2;
+    --bgInput: #f1edff;
+    --gradientPrimary: linear-gradient(
+        135deg,
+        rgb(74, 222, 128) 0%,
+        rgb(247, 210, 74) 50%,
+        rgb(248, 117, 93) 100%
+    );
+    --gradientGreen: linear-gradient(
+        135deg,
+        rgb(74, 222, 128),
+        rgb(117, 230, 158)
+    );
+    --gradientGold: linear-gradient(
+        135deg,
+        rgb(247, 210, 74),
+        rgb(249, 222, 123)
+    );
+    --textColorPrimary: #23282e;
+    --textColorSecondary: #6b7280;
+    --textColorTertiary: #fff;
+    --colorGreen: #4ade80;
+    --colorGold: #f7d24a;
+    --borderInput: #e5e7eb;
+}
+
+body.darkMode {
+    --bgPrimary: #14161a;
+    --bgSecondary: #1b1d23;
+    --textColorPrimary: #f3f4f6;
+    --textColorSecondary: #9096a2;
+    --borderInput: #282c34;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,4 +45,8 @@
 
 a {
     text-decoration: none;
+}
+
+body {
+    font-family: 'Ulagadi Sans', sans-serif;
 }
