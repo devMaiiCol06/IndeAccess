@@ -1,5 +1,11 @@
+import LogoName from "../components/LogoName";
+
 export default function Auth() {
     return (
-        <div>Auth Page</div>
+        <>
+            <header>
+                <LogoName />
+            </header>
+        </>
     );
 }

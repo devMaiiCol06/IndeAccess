@@ -1,0 +1,41 @@
+.logoName {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 1rem;
+}
+
+.logoName img {
+    width: 40px;
+    height: 40px;
+    padding: 0.3rem;
+    border-radius: 50%;
+}
+
+.logoName:hover img {
+    background-color: #dcebff;
+}
+
+.logoNameText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.pageName {
+    display: inline;
+    font-size: 24px;
+    font-weight: 700;
+    background: var(--gradientPrimary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Amaranth', sans-serif;
+}
+
+.pageDescription {
+    font-size: 12px;
+    color: var(--textColorSecondary);
+    font-weight: 500;
+}
