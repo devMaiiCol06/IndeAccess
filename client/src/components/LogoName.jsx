@@ -1,4 +1,4 @@
-import styles from '../modules/LogoName.module.css';
+import styles from '../modules/comps/LogoName.module.css';
 
 export default function LogoName() {
     return (
