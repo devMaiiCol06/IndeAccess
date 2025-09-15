@@ -25,17 +25,12 @@
 
 .pageName {
     display: inline;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 700;
-    background: var(--gradientPrimary);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: 'Amaranth', sans-serif;
 }
 
 .pageDescription {
-    font-size: 12px;
+    font-size: 11px;
     color: var(--textColorSecondary);
     font-weight: 500;
 }

@@ -3,30 +3,30 @@
 
 :root {
     --bgPrimary: #F1EDFF;
+    --bgPrimaryHover: #f1efff;
     --bgForm: #FFFFFF;
-    --gradientPrimary: linear-gradient(
-        135deg,
-        rgb(74, 222, 128) 0%,
-        rgb(247, 210, 74) 50%,
-        rgb(248, 117, 93) 100%
-    );
-    --gradientGreen: linear-gradient(
-        135deg,
-        rgb(74, 222, 128),
-        rgb(117, 230, 158)
-    );
-    --gradientGold: linear-gradient(
-        135deg,
-        rgb(247, 210, 74),
-        rgb(249, 222, 123)
-    );
+    --gradientPrimary: linear-gradient(135deg,
+            rgb(74, 222, 128) 0%,
+            rgb(247, 210, 74) 50%,
+            rgb(248, 117, 93) 100%);
+    --gradientGreen: linear-gradient(135deg,
+            rgb(74, 222, 128),
+            rgb(117, 230, 158));
+    --gradientGold: linear-gradient(135deg,
+            rgb(247, 210, 74),
+            rgb(249, 222, 123));
     --textColorPrimary: #23282e;
     --textColorSecondary: #6b7280;
     --textColorTertiary: #fff;
     --colorGreen: #4ade80;
+    --colorGreenHover: #26CF64;
     --colorGold: #f7d24a;
-    --borderInput: #e5e7eb;
+    --colorGoldHover: #F6C71F;
+    --borderInput: #d1d5dd;
     --bgBttTheme: #F3F4F6;
+    --bsPrimary: 0px 10px 10px 2px rgba(128, 128, 128, 0.1);
+    --bsSecondary: 0px 10px 10px 2px rgba(128, 128, 128, 0.2);
+    --bgHr: #d4d5d6;
 }
 
 body.darkMode {
@@ -37,6 +37,9 @@ body.darkMode {
     --textColorSecondary: #9096a2;
     --borderInput: #282c34;
     --bgBttTheme: #21252B;
+    --bsPrimary: 0px 10px 10px 2px rgba(0, 0, 0, 0.158);
+    --bsSecondary: 0px 10px 10px 2px rgba(0, 0, 0, 0.274);
+    --bgHr: #282c34;
 }
 
 * {
@@ -46,11 +49,23 @@ body.darkMode {
     transition: all 0.3s ease-in-out;
 }
 
-a {
+a,
+button,
+input {
     text-decoration: none;
+    border: none;
+    outline: none;
 }
 
 body {
     background: var(--bgPrimary);
     font-family: 'Ulagadi Sans', sans-serif;
+}
+
+.specialName {
+    background: var(--gradientPrimary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 4px 12px rgba(6, 8, 9, 0.1));
 }
