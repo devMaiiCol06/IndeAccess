@@ -1,5 +1,11 @@
-import Routes from "./routes/Routers";
+import Routers from "./routes/Routers";
 
 export default function App() {
-    return <Routes />;
+    const selectedTheme = localStorage.getItem('selectedTheme');
+    if (selectedTheme) {
+        document.body.classList.toggle(selectedTheme);
+    } else {
+        document.body.classList.add('lightMode');
+    }
+    return (<Routers />);
 }

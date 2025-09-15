@@ -4,7 +4,7 @@ import Auth from '../pages/Auth';
 import Panel from '../pages/Panel';
 import { BrowserRouter } from 'react-router-dom';
 
-export default function Routes() {
+export default function Routers() {
     return (
         <BrowserRouter>
             <Routes>
